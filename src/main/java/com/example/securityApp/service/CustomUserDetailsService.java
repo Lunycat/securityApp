@@ -2,7 +2,7 @@ package com.example.securityApp.service;
 
 import com.example.securityApp.model.User;
 import com.example.securityApp.repository.UserRepository;
-import com.example.securityApp.security.CustomUserDetails;
+import com.example.securityApp.component.CustomUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
