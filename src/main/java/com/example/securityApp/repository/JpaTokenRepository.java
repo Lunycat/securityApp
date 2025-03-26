@@ -1,13 +1,13 @@
 package com.example.securityApp.repository;
 
-import com.example.securityApp.model.User;
+import com.example.securityApp.model.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface JpaTokenRepository extends JpaRepository<Token, Long> {
 
-    Optional<User> findByUsername(String username);
+    Optional<Token> findTokenByIdentifier(String identifier);
 }
